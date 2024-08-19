@@ -1,4 +1,4 @@
-# Strings
+# Day 4: Strings
 
 multiline_string = '''I am a teacher and enjoy teaching.
 I didn't find anything as rewarding as empowering people.
