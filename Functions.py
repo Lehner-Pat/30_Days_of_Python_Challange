@@ -1,4 +1,4 @@
-# Functions
+# Day 11: Functions
 # A function is a reusable block of code or programming statements designed to perform a certain task.
 
 def add_two_numbers ():
