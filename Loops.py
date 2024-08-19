@@ -1,4 +1,5 @@
-# Loops
+# Day 10: Loops
+
 # In order to handle repetitive tasks, programming languages use loops.
 # Python programming language also provides the following types of two loops:
 # while loop
