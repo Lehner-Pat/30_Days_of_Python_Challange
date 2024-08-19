@@ -1,4 +1,4 @@
-# Variables in Python
+# Day 2: Variables in Python
 
 # 'Day 2: 30 Days of python programming' or:
 print('Day 2: 30 Days of python programming')
