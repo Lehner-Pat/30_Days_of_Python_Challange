@@ -1,4 +1,4 @@
-# LISTS
+# Day 5: Lists
 
 empty_list = list()
 print(empty_list)
