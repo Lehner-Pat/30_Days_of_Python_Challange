@@ -1,4 +1,4 @@
-# Sets
+# Day 7: Sets
 
 init_set = {'item1', 'item2', 'item3'}
 print(init_set)
