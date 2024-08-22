@@ -527,16 +527,39 @@ print(is_same_type([2, 4, 6]))
 
 
 # 4. Write a function which checks if provided variable is a valid python variable
-def is_valid_pyth_var(var):
+import keyword
+def is_valid_pyth_var(var_name):
+    if var_name.isidentifier() and not keyword.iskeyword(var_name):
+        return True
+    else:
+        return False
+print(is_valid_pyth_var("referoni"))
 
 
-def sum_all_nums(*numbs):
-    total = 0
-    for num in numbs:
-        total += num
-    return total
-print(sum_all_nums(3, 5))
+# 5. 
+# a) Create a function called the most_spoken_languages in the world. 
+# It should return 10 or 20 most spoken languages in the world in descending order
 
+from collections import Counter
+def top_10_languages(country_data):
+    language_counter = Counter()                        # initialise a counter for occurences of each language
+    for country in country_data:                        # iterate through the dictionary
+        for languages in country.get("languages", []):    # assuming 'languages' is a list
+            language_counter[languages] += 1
+    most_common_languages = language_counter.most_common(10)
+    top_10_languages = [languages for languages, count in most_common_languages]      # extract just the languages, not the counts from the most common results
+    return top_10_languages
+print(top_10_languages(country_data))
+
+
+# b) Create a function called the most_populated_countries. 
+# It should return the 20 most populated countries in descending order.
+
+def most_populated_countries(country_data):
+    sorted_countries = sorted(country_data, key=lambda country: country['population'], reverse=True)
+    top_20_countries = [country['name'] for country in sorted_countries[:20]]
+    return top_20_countries
+print(most_populated_countries(country_data))
 
 
 
